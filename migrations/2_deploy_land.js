@@ -3,8 +3,8 @@
 const Land = artifacts.require("Land"); //request the Land contract
 
 module.exports = async function (deployer) {
-  const NAME = "Bates College Buildings";
-  const SYMBOL = "BCB";
+  const NAME = "Pandora University Buildings";
+  const SYMBOL = "PUB";
   const COST = web3.utils.toWei("1", "ether");
 
   await deployer.deploy(Land, NAME, SYMBOL, COST); //wait for contract tobe deployed
